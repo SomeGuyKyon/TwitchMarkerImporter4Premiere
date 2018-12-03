@@ -1,4 +1,4 @@
-# TwitchMarkerImporter4Premiere
+# Twitch Marker Importer 4 Premiere Pro
 Twitch Stream marker csv file convert into Premiere Pro import-able format (via Screenlight marker import)
 
 ## Requirements 
