@@ -7,7 +7,7 @@ Twitch Stream markere csv file transfrom into Premiere Pro read-able format (Scr
 
 ## how to 
 1. put your downloaded Twitch Stream Marker into the "twitch_marker_input" folder.
-2. run "TMI_P.py"
+2. run "TMI_P.py" or if you don't have Python, and you beleive me, then just run exe file in TMI_P folder
 3. see the result from "premiere_marker_output" folder.
 4. import the output via Screenlight extension from Premiere pro
 
