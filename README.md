@@ -3,11 +3,11 @@ Twitch Stream markere csv file transfrom into Premiere Pro read-able format (Scr
 
 ## Requirements 
 1. Premiere Pro extension Screenlight: you can install this from CreativeCloud 
-2. Twitch Stream marker downloaded from Twitch Highlighter
+2. Twitch Stream marker csv file downloaded from Twitch Highlighter
 
 ## how to 
 1. put your downloaded Twitch Stream Marker into the "twitch_marker_input" folder.
-2. run
+2. run "TMI_P.py"
 3. see the result from "premiere_marker_output" folder.
 4. import the output via Screenlight extension from Premiere pro
 
