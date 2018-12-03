@@ -2,7 +2,7 @@
 Twitch Stream markere csv file transfrom into Premiere Pro read-able format (Screenlight)
 
 ## Requirements 
-1. Premiere Pro extension Screenlight: you can install this from CreativeCloud 
+1. Premiere Pro extension Screenlight marker import: you can install this from AdobeExchange https://www.adobeexchange.com/creativecloud.details.14011.html 
 2. Twitch Stream marker csv file downloaded from Twitch Highlighter
 
 ## how to 
