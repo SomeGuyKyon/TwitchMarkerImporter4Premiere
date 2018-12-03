@@ -19,3 +19,5 @@ https://youtu.be/cK5DR6pzXPk
 Youtube channel: 노잼망겜 NoJamMangGame
 
 Twitch Channel: https://www.twitch.tv/nojammanggame/
+
+special thanks to 율시민 ( https://www.twitch.tv/yamatta89 )
