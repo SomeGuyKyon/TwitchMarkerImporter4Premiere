@@ -1,5 +1,5 @@
 # TwitchMarkerImporter4Premiere
-Twitch Stream markere csv file transfrom into Premiere Pro read-able format (Screenlight)
+Twitch Stream marker csv file convert into Premiere Pro import-able format (via Screenlight marker import)
 
 ## Requirements 
 1. Premiere Pro extension Screenlight marker import: you can install this from AdobeExchange https://www.adobeexchange.com/creativecloud.details.14011.html 
