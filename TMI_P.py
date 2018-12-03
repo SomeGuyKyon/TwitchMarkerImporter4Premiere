@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[3]:
+# In[21]:
 
 def timestamp2sec(timestamp):
     import datetime
@@ -13,7 +13,7 @@ def timestamp2sec(timestamp):
     
 
 
-# In[4]:
+# In[31]:
 
 import os
 import csv
@@ -32,8 +32,8 @@ for root,dirs,files in os.walk(directory):
 
             with open(out_directory+file[:-4]+'_converted.csv','wb') as outfile:
                 #header
-                outfile.write('Screenlight Premiere Pro Marker Export 1.0\n')
-                outfile.write('Name:,Time:,Duration:,Marker Color:,Comment:\n')                
+                outfile.write('"Screenlight Premiere Pro Marker Export 1.0",,,,\n')
+                outfile.write('"Name:","Time:","Duration:","Marker Color:","Comment:"\n')                
                 
 
                 #  perform calculation
@@ -44,15 +44,16 @@ for root,dirs,files in os.walk(directory):
                     timestamp = row[0]
                     commentor = row[1]
                     comment = row[3].decode('utf-8').encode('euc-kr')
-
+                    
+                    #1st cell "Name"
                     output_name = commentor
-                    outfile.write(output_name)
+                    outfile.write('"'+output_name+'"')
                     outfile.write(',')
 
                     #=(MID(C2;1;2)*3600)+(MID(C2;4;2)*60)+MID(C2;7;2)+(MID(C2;10;2)/25)
                     #timestamp to sec
                     output_time=timestamp2sec(timestamp)
-                    outfile.write(str(output_time))
+                    outfile.write(str(float(output_time)))
                     outfile.write(',')
 
                     output_duration = '0' #todo : make this vary
@@ -62,7 +63,7 @@ for root,dirs,files in os.walk(directory):
                     outfile.write(output_marker_color)
                     outfile.write(',')
                     output_comment = comment
-                    outfile.write(output_comment)
+                    outfile.write('"'+output_comment+'"')
 
                     
                     outfile.write('\n')
