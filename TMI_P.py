@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[21]:
+# In[1]:
 
 def timestamp2sec(timestamp):
     import datetime
@@ -10,10 +10,9 @@ def timestamp2sec(timestamp):
     output = datetime.timedelta(hours=x.tm_hour,minutes=x.tm_min,seconds=x.tm_sec).total_seconds()
     
     return output
-    
 
 
-# In[31]:
+# In[2]:
 
 import os
 import csv
@@ -43,7 +42,9 @@ for root,dirs,files in os.walk(directory):
 
                     timestamp = row[0]
                     commentor = row[1]
-                    comment = row[3].decode('utf-8').encode('euc-kr')
+                    #changing encode makes premiere hard to load
+                    #comment = row[3].decode('utf-8').encode('euc-kr') 
+                    comment = row[3]
                     
                     #1st cell "Name"
                     output_name = commentor
